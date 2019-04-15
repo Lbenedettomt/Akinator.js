@@ -2,7 +2,9 @@
 // writeFile function is defined. 
 const fs = require ('fs');
 
-// Data which will write in a file. 
+// Data which will write in a file.
+
+//IRUUUUUUUUUUUUUUUU
 let data = "Learning how to write in a file." 
 
 // Write data in 'Output.txt' 

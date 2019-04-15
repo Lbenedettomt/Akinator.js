@@ -1,0 +1,30 @@
+MINI AKINATOR PASSOS 
+
+
+-> O PROGRAMA FUNCIONARA COM UMA ESTRUTURA DE IF/ELSE 
+
+
+-> VOU SETAR PREVIAMENTE UM ARQUIVO .TXT PRA ARMAZENAR AS INFORMACOES JA CONHECIDAS PELO PROGRAMA
+
+
+-> O RESTO DAS INFORMACOES SERAO ADICIONADAS PELO USUARIO E O PROGRAMA DEVE PEGAR A INFORMACAO QUE SERA INSERIDA PELO USUARIO E ADICIONAR NO ARQUIVO .TXT, QUE E UMA FORMA DE 'BANCO DE DADOS'
+
+
+-> UTILIZAR console.log() E input user DO NODE.JS (stdin/stdout) exemplo:
+
+var readline = require('readline');
+var resp = "";
+
+var leitor = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+leitor.question("Qual modulo pra ler dados no node.js?\n", function(answer) {
+    var resp = answer;
+    console.log("\nSua resposta '" + resp + "' foi grava com sucesso numa variavel inutil");
+    leitor.close();
+});
+
+
+-> TRANSFORMAR O ARQUIVO JSON EM UM OBJ PARA ADICIONAR NOVOS ITENS NO ARRAY DO JSON

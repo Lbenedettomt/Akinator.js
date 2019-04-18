@@ -1,0 +1,12 @@
+const fs = require('fs');
+
+var json = {
+    "Pergunta 1: " : "Seu personagem é homem?", 
+    "Pergunta 2: " : "Seu personagem tem quantos anos?",
+    "Pergunta 3: " : "Você conhece esse personagem pessoalmente?",
+    "Pergunta 4: " : "Seu personagem é uma figura pública?"
+};
+
+var indexOfQuestion = "Pergunta 1: ";
+var index = Object.keys(json).indexOf(indexOfQuestion);
+console.log(index);

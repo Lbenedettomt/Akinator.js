@@ -11,3 +11,14 @@ leitor.question("Qual módulo pra ler dados no node.js?\n", function(answer) {
     console.log("\nSua resposta '" + resp + "' foi grava com sucesso numa variável inútil");
     leitor.close();
 });
+
+
+
+var input_primario = process.stdin;
+input_primario.setEncoding('utf-8');
+
+input_primario.on ('data', function(data){
+    if(data === 'exit\n'){
+        process.exit();
+    }
+});
